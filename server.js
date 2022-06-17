@@ -33,7 +33,7 @@ app.set('view engine','ejs')
 app.use(session({
     secret: "thisismysecret",
     resave: false,
-    store: MongoStore.create({ mongoUrl: process.env.MONGODB_URL || 'mongodb://0.0.0.0:27017/cafe'}), 
+    store: MongoStore.create({ mongoUrl: process.env.MONGODB_URL || "mongodb://0.0.0.0:27017/cafe"}), 
     saveUninitialized: false,
     cookie: { maxAge: 1000*60*60*24} //24 hours
 }))
