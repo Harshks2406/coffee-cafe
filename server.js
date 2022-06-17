@@ -13,7 +13,7 @@ const { urlencoded } = require('express')
 const passport = require('passport')
 
 //mongo connection
-mongoose.connect(process.env.MONGODB_URL ||"mongodb://localhost:27017/cafe",{useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect( "mongodb+srv://Harsh24:Despacito@cluster0.ok2gk.mongodb.net/cafe?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true})
 
 const connection = mongoose.connection
 connection.once('open',()=>{
