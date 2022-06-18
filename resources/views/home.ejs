@@ -1,9 +1,9 @@
 <section class="hero py-16">
     <div class="container mx-auto flex items-center justify-between">
         <div class="w-1/2">
-            <h6 class="text-lg"><em>Are you hungry?</em></h6>
-            <h1 class="text-6xl font-bold">Don't wait !</h1>
-            <a href="#order"> <button class="px-6 py-2 rounded-full text-white mt-4 btn-primary">Order Now</button> </a>
+            <h6 class="text-sm md:text-lg"><em>Are you hungry?</em></h6>
+            <h1 class="text-xl md:text-6xl font-bold">Don't wait !</h1>
+            <a href="#order"> <button class="px-6 py-2 rounded-full text-white mt-4 btn-primary order">Order Now</button> </a>
         </div>
         <div class="w-1/2">
             <img src="/img/hero-cafe.jpg" alt="cafe">
@@ -11,13 +11,13 @@
     </div>
 </section>
 <section class="menu container mx-auto py-8">
-    <h1 class="text-xl font-bold mb-8" id="order">All Drinks & Eatries</h1>
-    <div class="grid grid-cols-4 gap-y-12 gap-x-16">
+    <h1 class="text-sm md:text-xl font-bold mb-8" id="orderss">All Drinks & Eatries</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-12 gap-x-16">
         <% drinks.forEach(function(drinks){ %>
-            <div class="w-64 mt-9">
+            <div class="w-full xl:w-64 mt-9">
                 <img class="h-40 mb-4 mx-auto" src="/img/<%= drinks.image %>" alt="Authentic">
                 <div class="text-center">
-                    <h2 class="mb-4 text-lg"><%= drinks.name %></h2>
+                    <h2 class="mb-4 text-3sm md:text-lg"><%= drinks.name %></h2>
                     <span class="size py-1 px-4 rounded-full uppercase test-xs"><%= drinks.size %></span>
                     <div class="flex item-center justify-around mt-6 ">
                         <span class="font-bold text-lg">₹<%= drinks.price %></span>

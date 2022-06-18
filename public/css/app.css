@@ -354,3 +354,40 @@ section.login a:hover {
 .link {
   color: #885624;
 }
+
+@media (max-width: 1060px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media (max-width: 612px) {
+  .heading {
+    display: none;
+  }
+  .nav {
+    font-size: small;
+  }
+  .cart {
+    width: 0.8rem;
+  }
+  .cartNumber {
+    width: 2.8rem;
+  }
+  .number {
+    font-size: 0.6rem;
+  }
+  .orderss {
+    font-size: 0.5rem;
+  }
+  .copyright {
+    font-size: 0.6rem;
+  }
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .cartItem {
+    width: 100%;
+  }
+}

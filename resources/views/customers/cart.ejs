@@ -11,7 +11,7 @@
         </div>
     </div>
     <% } else { %>
-    <div class="order container mx-auto w-1/2">
+    <div class="order container mx-auto xl:w-1/2 cartItem">
         <div class="flex items-center border-b border-gray-300 pb-4">
             <img src="/img/cart-black.png" alt="">
             <h1 class="font-bold ml-4 text-2xl">Order Summary</h1>
@@ -25,7 +25,7 @@
                     <span><%=pizza.item.size %></span>
                 </div>
                   <span class="flex-1"><%=pizza.qty %></span>
-                  <span class="font-bold text-lg  "><%=pizza.item.price %></span>
+                  <span class="font-bold text-lg">₹<%=pizza.item.price %></span>
             </div>
             <% } %>
         </div>
