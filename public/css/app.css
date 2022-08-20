@@ -368,7 +368,7 @@ section.login a:hover {
     font-size: small;
   }
   .cart {
-    width: 0.8rem;
+    width: 100%;
   }
   .cartNumber {
     width: 2.8rem;
@@ -380,6 +380,7 @@ section.login a:hover {
     font-size: 0.5rem;
   }
   .copyright {
+    text-align: center;
     font-size: 0.6rem;
   }
   table {
@@ -389,5 +390,11 @@ section.login a:hover {
   }
   .cartItem {
     width: 100%;
+  }
+  .order-btn {
+    font-size: 0.6rem;
+  }
+  .pizzaImage {
+    size: 0.1rem;
   }
 }

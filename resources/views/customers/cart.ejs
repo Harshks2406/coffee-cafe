@@ -19,7 +19,7 @@
         <div class="pizza-list">
             <% for(let pizza of Object.values(session.cart.items))  { %>
             <div class="flex item-center my-8">
-                <img class="w-24" src="/img/<%=pizza.item.image %>" alt="">
+                <img class="w-24 pizzaImage" src="/img/<%=pizza.item.image %>" alt="">
                 <div class="flex-1 ml-4">
                     <h1><%=pizza.item.name %></h1>
                     <span><%=pizza.item.size %></span>
@@ -39,7 +39,7 @@
                 <form action="/orders" method="POST" class="mt-12">
                     <input type="text" name="name" id="" class="border border-gray-400 p-2 w-1/2 mb-4 " placeholder="Name" >
                     <input type="text" name="phone" id="" class="border border-gray-400 p-2 w-1/2" placeholder="Phone Number">
-                    <div>
+                    <div class="order-btn">
                         <% if(user) { %>
                         <button class="btn-primary px-6 py-2 rounded-full text-white font-bold mt-6" type="submit">Order Now</button>
                         <% } else { %>

@@ -94,7 +94,7 @@ section.login{
         font-size: small;
     }
     .cart{
-        width: .8rem;
+        width: 100%;
     }
     .cartNumber{
         width: 2.8rem;
@@ -106,6 +106,7 @@ section.login{
         font-size: .5rem;
     }
     .copyright{
+        text-align: center;
         font-size: .6rem;
     }
     table{
@@ -115,5 +116,11 @@ section.login{
     }
     .cartItem{
         width: 100%;
+    }
+    .order-btn{
+        font-size: .6rem;
+    }
+    .pizzaImage{
+        size: .1rem;
     }
 }
